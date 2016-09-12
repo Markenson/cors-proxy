@@ -7,11 +7,9 @@ var express = require('express');
 var request = require('request');
 var API_SERVER_HOST = process.env.API_SERVER_HOST
 var app = express();  
-var url = null
 app.use('/', function(req, res) {
-	url = API_SERVER_HOST + '/' + req.url
 	var options = {
-		url: url,
+		url: API_SERVER_HOST + '/' + req.url,
 		headers: {
     		'User-Agent': 'request'
     	}
@@ -24,4 +22,4 @@ app.use('/', function(req, res) {
 
 app.listen(process.env.PORT || 3000);  
 
-console.log('Proxy initialized: ' + url)
+
