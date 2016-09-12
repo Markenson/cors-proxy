@@ -1,5 +1,5 @@
-MAINTAINER Markenson França <markensonfranca@gmail.com>
 FROM node
+MAINTAINER Markenson França <markensonfranca@gmail.com>
 
 RUN npm install express
 RUN npm install request
