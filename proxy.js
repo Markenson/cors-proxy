@@ -9,7 +9,7 @@ var API_SERVER_HOST = process.env.API_SERVER_HOST
 var app = express();  
 app.use('/', function(req, res) {
 	var options = {
-		url: API_SERVER_HOST + '/' + req.url,
+		url: API_SERVER_HOST + req.url,
 		headers: {
     		'User-Agent': 'request'
     	}
