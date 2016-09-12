@@ -1,2 +1,2 @@
 # cors-proxy
-Docker cors proxy (utilie for use swagger-ui)
+Docker cors proxy (small utility for use swagger-ui)
